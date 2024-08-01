@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerie | A Photo Search App</title>
+    <link rel="stylesheet" href="./Assets/common.css">
+    <link rel="stylesheet" href="./Assets/details.css">
+</head>
+<body>
+
+    <!--Naviation Bar-->
+    <nav>
+        <a href="./"><img src="./Assets/image or icon/Logo.png" alt="Logo" class="logo"></a>
+        <a href="./"><h1 class="title">Gallary</h1></a>
+
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search Anything" />
+            <input type="submit" value="SEARCH" class="search">
+        </form> 
+    </nav>
+
+    <!--Main Section-->
+    <section>
+        <h1 class="heading">&lt;DETAIL FOR - <span id="image_id"></span> /&gt;</h1>
+        <div class="details" id="details_image_container">
+            <img src="" alt="primary" id="detail_img">
+            <div class="content">
+                <h1 id="description_text"></h1>
+                <br>
+                <br>
+                <h3>Uploaded by - @<span id="username"></span></h3>
+                <br>
+                <br>
+                <!--Date-->
+                <h4>Date - <span id="upload_Date"></span></h4>
+                <br>
+                <br>
+                <!--Like and Views-->
+                <h5><span id="like_Count"></span> Likes (<span id="view_count"></span> views)</h5>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <!--Alternate Description-->
+                <h1 id="alt_description"></h1>
+                <!--Color of the image-->
+                <br>
+                <br>
+                <br>
+                <h5>Base Color</h5>
+                <br>
+                <div class="image_color" id="image_color">
+                    <span id="color_tex"></span>
+                </div>
+                <!--Download-->
+                <br>
+                <br>
+                <br>
+                <a target="_blank" id="download_link" class="button">&lt;Download /&gt;</a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="./"><h5>Gallary</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by Albin Kuriachan</h5>
+        <h1>|</h1>
+        <a href="./"><h5>Github</h5></a>
+    </footer>
+
+    <script src="./Assets/common.js"></script>
+    <script src="./Assets/details.js"></script>
+</body>
+
+
+</html>

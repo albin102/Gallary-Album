@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(./colors.css);
+
+body, h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background-color: var(--lightblue);
+    min-height: calc(100vh - 5rem);
+    position: relative;
+    padding-bottom: 5rem !important;
+    display: inline-block;
+    width: 100%;
+
+}
+
+nav{
+    background-color: var(--light);
+}
+
+
+nav .logo{
+    padding-top: 0.25rem;
+    height: 1.75rem;
+    margin-left: 0.75rem;
+}
+
+nav .title{
+    padding-bottom: 0.75rem;
+    padding-left: 0px;
+    color: var(--red);
+    text-decoration: none;
+    display: inline-block;
+ }
+
+
+nav form{
+    display: inline;
+    float: right;
+    padding-top: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+
+nav .search{
+    font-family: 'Press Start 2P', cursive;
+    padding: 0.25rem 0.75rem;
+}
+
+nav .search:focus{
+    outline: none !important;
+    border: 0.75px solid var(--red);
+}
+
+.heading{
+    text-align: center;
+    margin: 1.75rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--light);
+    width:calc(100% - 1.5rem);
+    padding: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:830px) {
+    footer h1{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    body{
+        min-height: calc(100vh - 10rem) !important;
+        padding-bottom: 10rem !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+    nav{
+        display: inline-block;
+        width: 100%;
+
+    }
+
+    nav form{
+        float: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+    }
+}
