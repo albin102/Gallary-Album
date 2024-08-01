@@ -16,4 +16,8 @@
 
  ## Font
 
- - [https://fonts.google.com/specimen/Oswald](https://fonts.google.com/specimen/Press+Start+2P?query=press)
+ -https://fonts.google.com/specimen/Press+Start+2P?query=press
+
+ ## Hosted URL
+
+ -https://responsive-gallerie.netlify.app/
