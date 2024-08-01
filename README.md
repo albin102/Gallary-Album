@@ -1,4 +1,4 @@
-# Gallerie - A Photo Search App
+# Gallary - A Photo Search App
 
 ## Languages used
 
